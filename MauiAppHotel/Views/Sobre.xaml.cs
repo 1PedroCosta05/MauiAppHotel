@@ -6,4 +6,10 @@ public partial class Sobre : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void ButtonVoltar_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopAsync();
+
+    }
 }

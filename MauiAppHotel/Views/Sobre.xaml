@@ -2,15 +2,33 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
-             Title="Sobre">
-    <VerticalStackLayout>
+             Title="Sobre" BackgroundColor="#9DECFD">
+    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label 
-            Text="Feito Por:
-            Pedro Costa"
+            Text="Feito Por:"
             FontFamily="Lugrasimo"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            FontSize="40"/>
+            FontSize="40" TextColor="#000000"
+        />  
+        <Label 
+            Text="Pedro Costa"
+            FontFamily="Lugrasimo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="40" Margin="0,25,0,0" TextColor="#8200FF"
+        />
+        <Label 
+            Text="Desenvolvido em Maio de 2025"
+            FontFamily="Lugrasimo"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="26" Margin="0,25,0,0" TextColor="#AA00FF"
+        />
+        <Button Text="Voltar"
+        HorizontalOptions="Center"
+        Clicked="ButtonVoltar_Clicked" WidthRequest="400" Margin="0,30,0,0" TextColor="#FFFFFF" FontSize="20" TextTransform="Uppercase" Padding="0,15" InputTransparent="False" />
+        
     </VerticalStackLayout>
     
 </ContentPage>
